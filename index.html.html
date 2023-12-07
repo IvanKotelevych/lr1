@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LR6</title>
+    <style type="text/css">
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-63%, -51%);
+        width: 120px;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: black;
+      }
+
+      .spin_bender {
+        width: max-content;
+        height: max-content;
+      }
+
+      .sp1 {
+        width: 200px;
+        height: 200px;
+        box-shadow: 106px 106px 30px -100px #006480,
+          -106px 106px 30px -100px #808080,
+          106px -106px 30px -100px #806400,
+          -106px -106px 30px -100px #ff8000,
+          0 150px 25px -100px blue,
+          0 -150px 25px -100px red,
+          150px 0 25px -100px #00c700,
+          -150px 0 25px -100px yellow;
+
+        border-top: 15px solid red;
+        border-right: 15px solid #00c700;
+        border-bottom: 15px solid blue;
+        border-left: 15px solid yellow;
+        border-radius: 50%;
+        -webkit-animation: sp 3s linear 0s infinite normal;
+        -moz-animation: sp 3s linear 0s infinite normal;
+        -o-animation: sp 3s linear 0s infinite normal;
+        animation: sp 3s linear 0s infinite normal;
+      }
+      .sp2 {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-top: 15px solid red;
+        border-right: 15px solid #00c700;
+        border-bottom: 15px solid blue;
+        border-left: 15px solid yellow;
+        border-radius: 50%;
+      }
+
+      @-webkit-keyframes sp {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes sp {
+        from {
+          -moz-transform: rotate(0deg);
+        }
+        to {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-o-keyframes sp {
+        from {
+          -o-transform: rotate(0deg);
+        }
+        to {
+          -o-transform: rotate(360deg);
+        }
+      }
+      @keyframes sp {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes sp3 {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+      @-moz-keyframes sp3 {
+        from {
+          -moz-transform: rotate(0deg);
+        }
+        to {
+          -moz-transform: rotate(-360deg);
+        }
+      }
+      @-o-keyframes sp3 {
+        from {
+          -o-transform: rotate(0deg);
+        }
+        to {
+          -o-transform: rotate(-360deg);
+        }
+      }
+      @keyframes sp3 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spin_bender" style="position: absolute; width: max-content; height: max-content; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1.7);">
+      <div style="position: absolute; width: max-content; height: max-content; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+        <div class="sp1">
+          <div class="sp2"></div>
+        </div>
+      </div>
+      <img src="./src/bender.gif" alt="I'm a GIF" />
+    </div>
+  </body>
+</html>
